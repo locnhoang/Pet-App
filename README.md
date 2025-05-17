@@ -1,13 +1,3 @@
-# **cse2102-spring25-Team23**
-
-## Names and NetIDs:
-### Jasleen Kaur, JAK20011 Easton Patz, ERP22005 Michael Kozikowski, MIK20012 Loc Hoang, LNH22001
-
-## Trello Link:
-### https://trello.com/b/d2Sn9JfZ/cse-2102-group-23-kanban
-
-## Prototype Link:
-### https://www.figma.com/proto/sd5iXunkETFDo5lUyjvvMz/Pet-Adoption-Website?node-id=0-1&t=V7NgGLyVzKmVNPeg-1
 
 ## Docker Instructions:
 #To run the backend using Docker:  
