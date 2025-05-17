@@ -1,0 +1,31 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  lint-and-test:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install -r backend/requirements.txt
+
+      - name: Lint code
+        run: pylint backend || true
+
+      - name: Run DB initialization and tests
+        run: |
+          python backend/initialize_db.py
+          pytest -q backend/test_main.py

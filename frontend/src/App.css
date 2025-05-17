@@ -1,0 +1,81 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.pet-list-container {
+  display: flex;
+  flex-wrap: wrap;  /* Allows wrapping to the next line if there's not enough space */
+  justify-content: space-around;  /* Align items with space between them */
+}
+
+/* Individual pet card styles */
+.pet-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  text-align: center;  /* Center-aligns text inside the card */
+  width: 200px;  /* Set a fixed width */
+}
+
+/* Image styles */
+.pet-image {
+  width: 100%;  /* Make image occupy full width of the card */
+  height: 150px;  /* Give a fixed height to all images */
+  object-fit: cover;  /* Ensures the image covers the area while preserving aspect ratio */
+}
+
+.pet-description-image {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+}
+
+.search-input {
+  width: 600px;  /* Adjust the width as per your requirement */
+  height: 45px;  /* Adjust the height if needed */
+  font-size: 16px;  /* Adjust the font size */
+  padding: 10px;  /* Add padding for better spacing */
+  border-radius: 5px;  /* Optional: to make the corners rounded */
+}
