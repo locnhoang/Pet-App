@@ -1,4 +1,3 @@
-
 ## Docker Instructions:
 #To run the backend using Docker:  
 #1. **Build the Docker image**  
